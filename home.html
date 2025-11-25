@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playwrite+NZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height:;
+    
+   
+}
+
+
+.header {
+    background: #08084a;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: "Bungee Spice";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+    background: #f4f4f4;
+    height: 80vh;
+    font-family: "Poppins";
+    overflow: auto;
+    
+}
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s ease;
+    cursor: pointer;
+    background-color: rgb(132, 255, 255);
+    
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 18px rgba(33, 55, 153, 0.5);
+    transition: 0.4s ease;
+}
+.foot{
+    text-align: center;
+    margin:auto;
+}
+.button{
+    border: 5px solid rgb(230, 0, 0);
+    border-radius: 50%;
+    width:60px ;
+    height: 60px;
+    
+    justify-content: end;
+}
+button:hover{
+    
+    
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="header">
+       <div><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CAMPUS CONNECT </h1></div>
+        <div><button class="button">Profile</button></div>
+        </div>
+        
+        
+    </header>
+
+    <section class="container">
+        <div class="box"><i class="fa-solid fa-repeat"></i>&nbsp;&nbsp;RENTEL</div>
+        <div class="box"><i class="fa-solid fa-users"></i>&nbsp;&nbsp;COMMUNITY</div>
+        <div class="box"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;NOTES</div>
+        <div class="box"><i class="fa-solid fa-utensils"></i>&nbsp;&nbsp;FOOD & OUTLETS</div>
+        <div class="box"><i class="fa-solid fa-map-pin"></i>&nbsp;&nbsp;LOST & FOUND</div>
+        <div class="box"><i class="fa-solid fa-calculator"></i>&nbsp;&nbsp;ATTENDACE CALCULATOR</div>
+        
+        
+        
+    </section>
+
+<div class="foot">
+    <footer>
+        <p>copyright infrigment - 2025</p>
+        <p>Developed by a team of: Aditya Singh, Harsh Raj, Manav Patel, Harshad Bhabhour, Krunal</p>
+    </footer>
+</div>
+    </div>
+    
+
+</body>
+</html>
