@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <title>DEPARTMENT</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+            font-optical-sizing: auto;
+            font-weight: 50px;
+            font-style: normal;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #6b07cf;
+            padding: 5px;
+            text-align: center;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #e0f7fa, #d1c4e9, #f3e5f5);
+            height: 83vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            padding: 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(105, 105, 104, 0.885);
+            font-size: 20px;
+            font-weight: 600;
+            transition: 1s ease;
+            cursor: pointer;
+            background-color: #6b07cf;
+            height: 400px;
+            overflow: hidden;
+            width: 400px;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.8);
+            transition: 0.4s ease;
+        }
+
+        .button {
+            border: 6px solid rgb(255, 249, 249);
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            background-color: rgb(255, 247, 247);
+            justify-content: end;
+        }
+
+        i:hover {
+            scale: 1.05;
+            transition: 0.4s ease;
+        }
+
+        .fa-circle-user {
+            font-size: 50px;
+        }
+
+        .icon {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .decrp {
+            margin-top: 20px;
+            color: white;
+        }
+
+        .selection {
+            height: 50px;
+            margin: 10px;
+        }
+
+        #confirm {
+            border-radius: 60%;
+            width: 60px;
+            height: 50px;
+            margin: auto;
+            font-family: 'Poppins';
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div><img src="logo_img.png" height="110px" width="auto"></div>
+        <div><img src="notes_name.png" height="80px"></div>
+        <div><button class="button"><i class="fa-solid fa-circle-user"></i></button></div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <div class="decrp"><label for="course">In which department you are enrolled?</label></div>
+            <br><br>
+            <select class="selection">
+                <option>Please select your department here.</option>
+                <option value="cse">Computer Science & Eng.</option>
+                <option value="eee">Electrical Eng.</option>
+                <option value="me">Mechanical Eng.</option>
+                <option value="ce">Chemical Eng.</option>
+                <option value="ae">Aeronautics Eng.</option>
+            </select>
+
+            <br><br>
+
+            <a href="notes.html"><button id="confirm">Submit</button></a>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
